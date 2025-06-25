@@ -10,7 +10,9 @@ def value_per_mile_flight(cash_value, miles, taxes_fees): #cash_value and miles 
   if miles == 0:
     return 0
 
-  return round((cash_value - taxes_fees)/miles, 4)  #4th place good?
+  net_monetary_value = cash_value - taxes_fees
+
+  return round( net_monetary_value/miles, 4)  #4th place good?
 
 
 #Steps: (tho i lowk dfk) --> Add more info after talkin to Taryn
