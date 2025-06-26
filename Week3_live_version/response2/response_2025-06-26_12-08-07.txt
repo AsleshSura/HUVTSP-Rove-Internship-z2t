@@ -1,0 +1,13 @@
+Route Selected: HEL → JFK
+Total Direct Flights: 2
+Total Layover Flights: 48
+
+Top 5 Cheapest Options:
+Route-1 | $472.53 | Stops: 2 | ['HEL', 'RIX', 'KEF', 'JFK']
+Route-2 | $472.53 | Stops: 2 | ['HEL', 'RIX', 'KEF', 'JFK']
+Route-3 | $711.31 | Stops: 1 | ['HEL', 'LIS', 'JFK']
+Route-4 | $714.18 | Stops: 0 | ['HEL', 'JFK']
+Route-5 | $720.18 | Stops: 0 | ['HEL', 'JFK']
+
+Optimal Redemption:
+Route-1 | $472.53 | Stops: 2 | Segments: ['HEL', 'RIX', 'KEF', 'JFK']
