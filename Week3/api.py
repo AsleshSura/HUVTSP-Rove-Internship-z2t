@@ -1,7 +1,6 @@
 import os
 from amadeus import Client, ResponseError
 import csv
-from response import save_session_summary
 
 
 amadeus = Client(
@@ -66,4 +65,4 @@ with open(output_path, "w", newline="", encoding="utf-8") as file:
                     route_counter += 1
 
         except ResponseError as error:
-            print(f"API Error for {origin} to {destination}: {error}")
+            print(f"API Error {origin} to {destination}: {error}")

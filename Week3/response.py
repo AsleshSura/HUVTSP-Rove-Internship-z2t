@@ -1,7 +1,7 @@
 import os
 from datetime import datetime
 
-def save_session_summary(origin, destination, direct, layovers, top_routes, optimal):
+def save_session(origin, destination, direct, layovers, top_routes, optimal):
     base_dir = os.path.dirname(os.path.abspath(__file__))
     response_dir = os.path.join(base_dir, "response")
     os.makedirs(response_dir, exist_ok=True)
@@ -11,7 +11,7 @@ def save_session_summary(origin, destination, direct, layovers, top_routes, opti
     response_file = os.path.join(response_dir, filename)
 
     with open(response_file, "w", encoding="utf-8") as f:
-        f.write(f"Route Selected: {origin} → {destination}\n")
+        f.write(f"Route Selected: {origin} → {destination}\n ")
         f.write(f"Total Direct Flights: {len(direct)}\n")
         f.write(f"Total Layover Flights: {len(layovers)}\n\n")
 
@@ -22,4 +22,4 @@ def save_session_summary(origin, destination, direct, layovers, top_routes, opti
         f.write("\nOptimal Redemption:\n")
         f.write(f"{optimal['id']} | ${optimal['price']} | Stops: {optimal['stops']} | Segments: {optimal['segments']}\n")
 
-    print(f"✅ Session saved to: {filename}")
+    

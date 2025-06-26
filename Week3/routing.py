@@ -1,7 +1,7 @@
 import os
 import csv
 from datetime import datetime
-from response import save_session_summary
+from response import save_session
 
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
