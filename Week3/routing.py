@@ -77,7 +77,7 @@ def main():
         optimal = calculate_optimal_redemption(selected_routes)
         print(f"\nOptimal Redemption:")
         print(f"{optimal['id']} | ${optimal['price']} | Stops: {optimal['stops']} | Segments: {optimal['segments']}")
-        save_session_summary(origin, destination, direct, layovers, all_ranked, optimal)
+        save_session(origin, destination, direct, layovers, all_ranked, optimal)
         
 
 
