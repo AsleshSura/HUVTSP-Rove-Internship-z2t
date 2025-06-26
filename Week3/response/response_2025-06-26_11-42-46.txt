@@ -1,0 +1,13 @@
+Route Selected: JFK → CDG
+Total Direct Flights: 4
+Total Layover Flights: 46
+
+Top 5 Cheapest Options:
+Route-51 | $54.84 | Stops: 0 | ['JFK', 'CDG']
+Route-52 | $121.93 | Stops: 1 | ['JFK', 'LHR', 'CDG']
+Route-53 | $121.93 | Stops: 1 | ['JFK', 'LHR', 'CDG']
+Route-54 | $121.93 | Stops: 1 | ['JFK', 'LHR', 'CDG']
+Route-55 | $121.93 | Stops: 1 | ['JFK', 'LHR', 'CDG']
+
+Optimal Redemption:
+Route-51 | $54.84 | Stops: 0 | Segments: ['JFK', 'CDG']
