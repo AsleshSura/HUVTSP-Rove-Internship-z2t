@@ -26,11 +26,29 @@ def value_per_mile(cash_value, miles, taxes_fees): #cash_value and miles are COS
 
 # --> Algorithm: IF there are those extra value stuff based on the string: WHAT the upgrade is, a certain percentage increase on the value per mile 
 
-aNum = 0
+#Also maybe we can add more data and put it into a json file (idk how to import n do that stuff n if there are any extra cautions w dat sooo)
+aPrice = 0
+aMile = 0
 #For amenities: Either include estimated extra value or string ofspecific stuff to then be read in, and the value increased based on the og price
-
+#Price estimates in dollars
+#The room types are averages per suite type, so things like location in hotel or view are not seperately factored in, the room values are "averaged"
 HOTELS_INFO:
-  {"Marriott International": {"Paris Marriott Champs Elysees": {"Price": aNum, "Amenities": [] }, 
-                             "Paris Marriott Rive Gauche Hotel": {},
-                             "Paris Marriott Opera": {} },
-   "Hilton Worldwide": {} }
+{
+    "Marriott International": 
+   {
+     "Paris Marriott Champs Elysees":    
+        {                         # $$    miles
+          "Deluxe King": {"Price": [810, 31667], "bonus_through_redemption": ""}, 
+          "RoomType2": {"Price": aNum, "Amenities": "",},
+          "RoomType3": {"Price": aNum, "Amenities": "",},
+          "Core Amenities": [],
+        },
+     "New York Marriott Marquis": {},
+     "Wailea Beach Resort - Marriott, Maui": {},
+     "The Cosmopolitan of Las Vegas": {},
+     "JW Marriott Marco Island Beach Resort": {},
+     "Sheraton Grand Seattle": {},
+    },
+  
+    "Hilton Worldwide": {} 
+}
