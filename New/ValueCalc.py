@@ -3,11 +3,11 @@
 
 
 #NOTE: FInish Friday Morning??!
-def value_per_mile(cash_value, miles, taxes_fees): #cash_value and miles are COSTS
+def value_per_mile(cash_value, miles, taxes_fees, bonus_value): #cash_value and miles are COSTS
   #change if definiton/understanding is wrong
   if miles == 0:
     return 0
-  net_monetary_value = cash_value - taxes_fees
+  net_monetary_value = (cash_value - taxes_fees)*(1+bonus_value)
   
   return round( net_monetary_value/miles, 4)  #4th place good?
 
@@ -38,9 +38,30 @@ HOTELS_INFO:
    {
      "Paris Marriott Champs Elysees":    
         {                         # $$    miles
-          "Deluxe King": {"Price": [810, 31667], "bonus_through_redemption": ""}, 
-          "RoomType2": {"Price": aNum, "Amenities": "",},
-          "RoomType3": {"Price": aNum, "Amenities": "",},
+          "Deluxe King": 
+            {  
+              "Price": [810, 31667], 
+              "Bonus_Through_Redemption": 
+                {
+                  "Total": 0
+                },  
+            }, 
+          "Room2": 
+            {  
+              "Price": [1161.5, 84500], 
+              "Bonus_Through_Redemption": 
+                {
+                  "Possible_Upgrade": 0.15, "Balcony": 0.2, "View": 0.3, "Breakfast": 0.08, "Nonstrict_Time": 0.03, "Total": 0.31,
+                },  
+            },
+          "Room3": 
+            {  
+              "Price": [, ], 
+              "Bonus_Through_Redemption": 
+                {
+                   "Total": ,
+                },  
+            },
           "Core Amenities": [],
         },
      "New York Marriott Marquis": {},
@@ -52,3 +73,6 @@ HOTELS_INFO:
   
     "Hilton Worldwide": {} 
 }
+
+
+#Bonuses: Possible_Upgrade = 0.15   Balcony = 0.2    View = 0.3    Breakfast = 0.08    Nonstrict_Time =  0.03 (Early check in / Late Checkout)   
