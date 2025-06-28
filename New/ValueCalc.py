@@ -3,6 +3,7 @@
 
 
 #NOTE: FInish Friday Morning??!
+#NOTE: We were unable to find the exact number of miles earned and redeemed for gift cards. Plan to go to office hours and will update this soon.
 def value_per_mile(cash_value, miles, taxes_fees, bonus_value): #cash_value and miles are COSTS
   #change if definiton/understanding is wrong
   if miles == 0:
