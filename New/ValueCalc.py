@@ -75,5 +75,5 @@ HOTELS_INFO:
     "Hilton Worldwide": {} 
 }
 
-
+#
 #Bonuses: Possible_Upgrade = 0.15   Balcony = 0.2    View = 0.3    Breakfast = 0.08    Nonstrict_Time =  0.03 (Early check in / Late Checkout)   
