@@ -25,7 +25,7 @@ def value_per_mile(cash_value, miles, taxes_fees): #cash_value and miles are COS
 
 #Price estimates in dollars
 #The room types are averages per suite type, so things like location in hotel or view are not seperately factored in, the room values are "averaged"
-HOTELS_INFO:
+HOTELS_INFO = 
 {
     "Marriott International": 
      {
