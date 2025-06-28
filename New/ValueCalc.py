@@ -4,11 +4,11 @@
 
 #NOTE: FInish Friday Morning??!
 #NOTE: We were unable to find the exact number of miles earned and redeemed for gift cards. Plan to go to office hours and will update this soon.
-def value_per_mile(cash_value, miles, taxes_fees, bonus_value): #cash_value and miles are COSTS
+def value_per_mile(cash_value, miles, taxes_fees): #cash_value and miles are COSTS
   #change if definiton/understanding is wrong
   if miles == 0:
     return 0
-  net_monetary_value = (cash_value - taxes_fees)*(1+bonus_value)
+  net_monetary_value = (cash_value - taxes_fees)
   
   return round( net_monetary_value/miles, 4)  #4th place good?
 
@@ -207,3 +207,12 @@ HOTELS_INFO:
 
 #Bonuses: Possible Upgrade = 0.05   Late Checkout = 0.015   Balcony = 0.05    View = 0.1    Breakfast = 0.03    Nonstrict Time =  0.03 (Early check in / Late Checkout)   Lounge Access: 0.08  
 #Hotel Wide Amenities: Gym    Housekeeping   Business Center   Evening Turndown Service     Sundry/Convenience Store    Dog Friendly w/ Fee
+
+#CALCULATOR
+#Calculate value per mile for the hotel specifically\y
+def hotel_vpm_calc(cash_value, miles, taxes_fees, chain, hotel_name, room_name)
+  bonus_value = HOTELS_INFO[chain][hotel_name][room_name]["Bonus Through Redemption"]["Total"]
+
+  cash_value = cash_value*(1+bonus_value)
+  return value_per_mile(cash_value, miles, taxes_fees)
+
