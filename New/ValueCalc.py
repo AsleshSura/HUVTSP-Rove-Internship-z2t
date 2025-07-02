@@ -25,8 +25,9 @@ def value_per_mile(cash_value, miles, taxes_fees): #cash_value and miles are COS
 
 #Price estimates in dollars
 #The room types are averages per suite type, so things like location in hotel or view are not seperately factored in, the room values are "averaged"
+
 HOTELS_INFO = {
-    "Marriott International": {
+    "Marriott International": { #NOTE: Rooms can be redeemed through points only, BUT miles can be converted to points
         "Paris Marriott Champs Elysees": {
             "Deluxe King": {
                 "Price": [810, 31667],
@@ -196,7 +197,13 @@ HOTELS_INFO = {
             "Core Amenities": ["Dog Friendly", "Gym", "Housekeeping", "Business Center", "Sundry/Convenience Store", "Evening Turndown Service"]
         }
     },
-    "Hilton Worldwide": {}
+    "Hilton Worldwide": {
+      
+    },
+    "Hiltotn Worldwide": {},
+    "Hilrton Worldwide": {},
+    "Hilfton Worldwide": {},
+    "Hiltoyn Worldwide": {},
 }
 
 
@@ -206,9 +213,12 @@ HOTELS_INFO = {
 
 #CALCULATOR
 #Calculate value per mile for the hotel specifically\y
-def hotel_vpm_calc(cash_value, miles, taxes_fees, chain, hotel_name, room_name):
+def hotel_vpm_calc(taxes_fees, chain, hotel_name, room_name):
   bonus_value = HOTELS_INFO[chain][hotel_name][room_name]["Bonus Through Redemption"]["Total"]
+  cash_value = HOTELS_INFO[chain][hotel_name][room_name]["Price"][0]
+  miles = HOTELS_INFO[chain][hotel_name][room_name]["Price"][1]
 
+#fees and taxes???  
   cash_value = cash_value*(1+bonus_value)
   return value_per_mile(cash_value, miles, taxes_fees)
 
