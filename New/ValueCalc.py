@@ -206,6 +206,259 @@ HOTELS_INFO = {
     "Hiltoyn Worldwide": {},
 }
 
+RITZ_CARLTON_INFO = {
+    "Dallas Irving Ritz Carlton": {
+        "Deluxe Room, 1 King Bed, Balcony, Tower (Mobility Accessible, Roll-in Shower)": {
+            "Price": [509.66, 35000],
+            "Redemption Value (¢/Mile)": 1.46,
+            "Miles Earned": 5113,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning",
+            ]
+        },
+        "Villa, 1 King Bed, Patio, Poolside (View)": {
+            "Price": [653.87, 49000],
+            "Redemption Value (¢/Mile)": 1.47,
+            "Miles Earned": 7250,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning",
+            ]
+        },
+        "Executive Suite, 1 King Bed, Non Smoking, Golf View (Balcony)": {
+            "Price": [692.39, 52000],
+            "Redemption Value (¢/Mile)": 1.47,
+            "Miles Earned": 7678,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning",
+            ]
+        },
+        "Core Amenities": [
+            "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+        ]
+    },
+    "London Ritz Carlton": {
+        "Executive Suite, 1 Bedroom": {
+            "Price": [7261.87, 512000],
+            "Redemption Value (¢/Mile)": 1.42,
+            "Miles Earned": 47530,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Shower", "Safety deposit box", "Telephone", "Air conditioning", "Hair dryer",
+            ]
+        },
+        "Executive Suite, 1 Bedroom (Breakfast Included)": {
+            "Price": [7391.55, 521000],
+            "Redemption Value (¢/Mile)": 1.42,
+            "Miles Earned": 48378,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Shower", "Safety deposit box", "Telephone", "Air conditioning", "Hair dryer",
+            ]
+        },
+        "Core Amenities": [
+            "Shower", "Safety deposit box", "Telephone", "Air conditioning", "Hair dryer"
+        ]
+    },
+    "New York Ritz Carlton": {
+        "Superior Room, 1 King Bed, Non Smoking": {
+            "Price": [887.41, 60000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 8903,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Minibar", "Shower", "Safety deposit box", "TV", "Telephone",
+            ]
+        },
+        "Room, 1 King Bed, Non Smoking, Park View": {
+            "Price": [1109.29, 75000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 11129,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Minibar", "Shower", "Safety deposit box", "TV", "Telephone",
+            ]
+        },
+        "Deluxe 1 King Bed, Interior View": {
+            "Price": [1531.88, 103000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 15370,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Minibar", "Shower", "Safety deposit box", "TV", "Telephone",
+            ]
+        },
+        "Avenue View, 1 King Bed, Mobility Accessible, Tub": {
+            "Price": [1609.12, 108000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 16144,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Minibar", "Safety deposit box", "TV", "Telephone", "Air conditioning",
+            ]
+        },
+        "1 King Bed, Avenue View": {
+            "Price": [1636.77, 110000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 16422,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Minibar", "Shower", "Safety deposit box", "TV", "Telephone",
+            ]
+        },
+        "Deluxe 2 Double Beds, Interior View": {
+            "Price": [1702.35, 114000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 17079,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Minibar", "Shower", "Safety deposit box", "TV", "Telephone",
+            ]
+        },
+        "Grand Room, 1 King Bed, Non Smoking, Park View": {
+            "Price": [1714.47, 115000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 17202,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Minibar", "Shower", "Safety deposit box", "TV", "Telephone",
+            ]
+        },
+        "Suite, 1 Bedroom, Non Smoking, Park View": {
+            "Price": [2785.80, 187000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 27950,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Minibar", "Shower", "Safety deposit box", "TV", "Telephone",
+            ]
+        },
+        "Suite, Avenue View": {
+            "Price": [2889.07, 194000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 28987,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Minibar", "Shower", "Safety deposit box", "TV", "Telephone",
+            ]
+        },
+        "Grand Suite, 1 Bedroom, Non Smoking, Park View": {
+            "Price": [3471.66, 233000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 34833,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Minibar", "Shower", "Safety deposit box", "TV", "Telephone",
+            ]
+        },
+        "Premier Suite, 1 Bedroom, Non Smoking, Park View": {
+            "Price": [4238.22, 284000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 42523,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Minibar", "Shower", "Safety deposit box", "TV", "Telephone",
+            ]
+        },
+        "Core Amenities": [
+            "Minibar", "Shower", "Safety deposit box", "TV", "Telephone"
+        ]
+    },
+    "Bali Ritz Carlton": {
+        "Suite, 1 Bedroom, Non Smoking, Resort View (Balcony)": {
+            "Price": [1868.86, 126000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 18750,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Shower", "Safety deposit box", "TV",
+            ]
+        },
+        "Suite 1 Bedroom Non Smoking Resort View (Balcony) 1 King Bed": {
+            "Price": [2006.80, 135000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 20135,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Shower", "Safety deposit box", "TV",
+            ]
+        },
+        "Ubud Pool Villa 1 Bedroom Villa 1 King Ubud View Private Pool": {
+            "Price": [2909.33, 195000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 29190,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Shower", "Safety deposit box", "TV",
+            ]
+        },
+        "Riverfront Pool Villa 1 Bedroom Villa 1 King Ayung River view Private pool": {
+            "Price": [3182.08, 213000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 31927,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Shower", "Safety deposit box", "TV",
+            ]
+        },
+        "Reserve Pool Villa 2 Bedroom Villa Bedroom 1: 1 King Bedroom 2: 2 Queen Ayung River View": {
+            "Price": [7273.33, 487000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 72976,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Shower", "Safety deposit box", "TV",
+            ]
+        },
+        "Core Amenities": [
+            "Coffee/tea maker", "Minibar", "Shower", "Safety deposit box", "TV"
+        ]
+    },
+    "Maui Ritz-Carlton": {
+        "Deluxe Room, 1 King Bed, Lanai, Resort View": {
+            "Price": [734.83, 50000],
+            "Redemption Value (¢/Mile)": 1.47,
+            "Miles Earned": 7372,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Shower", "Safety deposit box", "TV", "Telephone", "Air conditioning",
+            ]
+        },
+        "1 Bedroom Suite, 1 King Bed and Sofa Bed, Garden View": {
+            "Price": [1205.74, 81000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 12097,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Shower", "Safety deposit box", "TV", "Telephone", "Air conditioning",
+            ]
+        },
+        "1 Bedroom Suite, 1 King Bed and Sofa Bed, Ocean View": {
+            "Price": [1279.71, 86000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 12840,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Shower", "Safety deposit box", "TV", "Telephone", "Air conditioning",
+            ]
+        },
+        "Suite, 2 Bedrooms, Non Smoking, Garden View": {
+            "Price": [2195.10, 147000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 22024,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Shower", "Safety deposit box", "TV", "Telephone", "Air conditioning",
+            ]
+        },
+        "Core Amenities": [
+            "Shower", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+        ]
+    }
+}
+
 
 #Keys and Value categories
 #Bonuses: Possible Upgrade = 0.05   Late Checkout = 0.015   Balcony = 0.05    View = 0.1    Breakfast = 0.03    Nonstrict Time =  0.03 (Early check in / Late Checkout)   Lounge Access: 0.08  
