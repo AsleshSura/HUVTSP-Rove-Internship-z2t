@@ -459,6 +459,530 @@ RITZ_CARLTON_INFO = {
     }
 }
 
+HYATT_HOTELS_INFO = {
+    "Hyatt Regency Maui": {
+        "Room, 1 King Bed with Sofa bed": {
+            "Price": [830.31, 56000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 8330,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "Room, 1 King Bed with Sofa bed (Breakfast Included)": {
+            "Price": [947.85, 64000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 9510,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "Room, 1 King Bed, Accessible (Shower)": {
+            "Price": [830.31, 56000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 8330,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "Room, 1 King Bed, Accessible (Shower, Breakfast Included)": {
+            "Price": [947.85, 64000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 9510,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "Room, 1 King Bed with Sofa bed, Partial Ocean View": {
+            "Price": [866.47, 58000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 8693,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "Room, 1 King Bed with Sofa bed, Partial Ocean View (Breakfast Included)": {
+            "Price": [984.36, 66000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 9876,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "Room, 1 King Bed with Sofa bed, Ocean View": {
+            "Price": [878.52, 59000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 8813,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "Room, 1 King Bed with Sofa bed, Ocean View (Breakfast Included)": {
+            "Price": [996.55, 67000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 9999,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "1 King Bed, Mountain View": {
+            "Price": [795.63, 64000],
+            "Redemption Value (¢/Mile)": 1.47,
+            "Miles Earned": 9468,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "1 King Bed, Mountain View (Breakfast Included)": {
+            "Price": [898.08, 72000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 10686,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "ROOM, QUEEN/QUEEN, MOUNTAIN VIEW": {
+            "Price": [947.48, 64000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 9506,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "ROOM, QUEEN/QUEEN, OCEAN VIEW": {
+            "Price": [987.00, 67000],
+            "Redemption Value (¢/Mile)": 1.47,
+            "Miles Earned": 9903,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "ROOM, QUEEN/QUEEN, PARTIAL OCEAN VIEW": {
+            "Price": [991.02, 67000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 9943,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "Room, 1 King Bed with Sofa bed, Ocean View, Corner": {
+            "Price": [1008.70, 68000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 10120,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "Room, 1 King Bed with Sofa bed, Ocean View, Corner (Breakfast Included)": {
+            "Price": [1118.20, 75000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 11219,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "1 King Bed, Ocean front": {
+            "Price": [863.93, 69000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 10280,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "1 King Bed, Ocean front (Breakfast Included)": {
+            "Price": [966.35, 77000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 11498,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "Club Room, 1 King Bed with Sofa bed, Partial Ocean View (Club Access)": {
+            "Price": [1144.99, 77000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 11488,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "Club Room, 1 King Bed with Sofa bed, Partial Ocean View (Club Access, Breakfast Included)": {
+            "Price": [1254.50, 84000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 12588,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "Club Room, 1 King Bed with Sofa bed, Oceanfront (Club Access)": {
+            "Price": [1193.67, 80000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 11976,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "Club Room, 1 King Bed with Sofa bed, Oceanfront (Club Access, Breakfast Included)": {
+            "Price": [1303.18, 88000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 13075,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "Suite, Oceanfront": {
+            "Price": [2804.68, 188000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 28140,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "Suite, Oceanfront (Breakfast Included)": {
+            "Price": [2914.18, 195000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 29239,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "Deluxe Ocean Suite": {
+            "Price": [2726.09, 217000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 32440,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "Deluxe Ocean Suite (Breakfast Included)": {
+            "Price": [2828.53, 225000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 33659,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "Core Amenities": [
+            "Coffee/tea maker", "Safety deposit box", "TV", "Telephone", "Air conditioning"
+        ]
+    },
+    "Hyatt Regency Bali": {
+        "1 King Bed Premium": {
+            "Price": [356.32, 24000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 3576,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
+                # ... (17 total amenities)
+            ]
+        },
+        "Core Amenities": [
+            "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
+        ]
+    },
+    "Park Hyatt New York": {
+        "1 King Bed": {
+            "Price": [1108.14, 75000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 11118,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
+                # ... (19 total amenities)
+            ]
+        },
+        "1 King Bed (Breakfast Included)": {
+            "Price": [1246.03, 84000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 12501,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
+            ]
+        },
+        "1 King Bed With Ada Shower": {
+            "Price": [1108.14, 75000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 11118,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
+            ]
+        },
+        "1 King Bed With Ada Shower (Breakfast Included)": {
+            "Price": [1246.03, 84000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 12501,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
+            ]
+        },
+        "2 Double Beds With City View": {
+            "Price": [1438.01, 97000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 14428,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
+            ]
+        },
+        "2 Double Beds With City View (Breakfast Included)": {
+            "Price": [1575.90, 106000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 15811,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
+            ]
+        },
+        "1 King Bed With City View": {
+            "Price": [1438.01, 97000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 14428,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
+            ]
+        },
+        "1 King Bed With City View (Breakfast Included)": {
+            "Price": [1575.90, 106000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 15811,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
+            ]
+        },
+        "2 Double Beds Studio Suite": {
+            "Price": [1491.05, 100000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 14960,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
+            ]
+        },
+        "2 Double Beds Studio Suite (Breakfast Included)": {
+            "Price": [1628.94, 109000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 16343,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
+            ]
+        },
+        "1 Bedroom City View Suite": {
+            "Price": [1654.40, 111000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 16599,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
+            ]
+        },
+        "1 Bedroom City View Suite (Breakfast Included)": {
+            "Price": [1792.29, 120000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 17983,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
+            ]
+        },
+        "1 Bedroom Sleep Suite By Bryte": {
+            "Price": [1737.14, 117000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 17430,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
+            ]
+        },
+        "1 Bedroom Sleep Suite By Bryte (Breakfast Included)": {
+            "Price": [1875.03, 126000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 18813,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
+            ]
+        },
+        "Suite 1 Bedroom City View 1 King Bed": {
+            "Price": [1938.97, 130000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 19454,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
+            ]
+        },
+        "1 Bedroom Terrace Suite": {
+            "Price": [2609.04, 175000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 26177,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
+            ]
+        },
+        "1 Bedroom Terrace Suite (Breakfast Included)": {
+            "Price": [2746.92, 184000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 27560,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
+            ]
+        },
+        "Suite 1 Bedroom Terrace 1 King Bed": {
+            "Price": [3059.20, 205000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 30694,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "TV", "Telephone", "Air conditioning"
+            ]
+        },
+        "Core Amenities": [
+            "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
+        ]
+    },
+    "Park Hyatt Milano": {
+        "Deluxe Room (Park)": {
+            "Price": [1537.47, 111000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 16514,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Air conditioning"
+            ]
+        },
+        "Park Junior Suite": {
+            "Price": [2408.23, 162000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 24163,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Air conditioning"
+            ]
+        },
+        "Park Junior Suite (Breakfast Included)": {
+            "Price": [2527.63, 170000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 25360,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Air conditioning"
+            ]
+        },
+        "Prestige Suite": {
+            "Price": [3607.00, 242000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 36190,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Air conditioning"
+            ]
+        },
+        "Prestige Suite (Breakfast Included)": {
+            "Price": [3726.40, 250000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 37388,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Air conditioning"
+            ]
+        },
+        "Terrace Suite": {
+            "Price": [3845.80, 258000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 38586,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Air conditioning"
+            ]
+        },
+        "Terrace Suite (Breakfast Included)": {
+            "Price": [3965.20, 266000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 39784,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Air conditioning"
+            ]
+        },
+        "Core Amenities": [
+            "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Air conditioning"
+        ]
+    },
+    "Hyatt Regency London Blackfriars": {
+        "Regency Suite High Street View": {
+            "Price": [1189.82, 80000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 11940,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "Telephone", "Air conditioning"
+            ]
+        },
+        "Executive Suite": {
+            "Price": [1293.26, 87000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 12976,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "Telephone", "Air conditioning"
+            ]
+        },
+        "Executive Suite (Room Only, Higher Rate)": {
+            "Price": [1432.73, 96000],
+            "Redemption Value (¢/Mile)": 1.49,
+            "Miles Earned": 14376,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "Telephone", "Air conditioning"
+            ]
+        },
+        "SUITE EXECUTIVE CITY VIEW": {
+            "Price": [1392.25, 94000],
+            "Redemption Value (¢/Mile)": 1.48,
+            "Miles Earned": 13969,
+            "Max Occupancy": 2,
+            "Amenities": [
+                "Coffee/tea maker", "Minibar", "Safety deposit box", "Telephone", "Air conditioning"
+            ]
+        },
+        "Core Amenities": [
+            "Coffee/tea maker", "Minibar", "Safety deposit box", "Telephone", "Air conditioning"
+        ]
+    }
+}
 
 #Keys and Value categories
 #Bonuses: Possible Upgrade = 0.05   Late Checkout = 0.015   Balcony = 0.05    View = 0.1    Breakfast = 0.03    Nonstrict Time =  0.03 (Early check in / Late Checkout)   Lounge Access: 0.08  
