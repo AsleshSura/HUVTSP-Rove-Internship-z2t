@@ -3,7 +3,6 @@ import json
 from flask import Flask, render_template_string, request
 from api import get_flight_data_fixed
 
-# Load redemption chart
 with open(os.path.join("Week3", "data.json"), "r") as f:
     redemption_chart = json.load(f)
 
@@ -18,24 +17,92 @@ allowed_airlines = {
 
 app = Flask(__name__)
 
-# HTML Template
 HTML = """
 <!DOCTYPE html>
 <html>
 <head>
     <title>Flight VPM Tool</title>
     <style>
-        body { font-family: Arial; background: #f2f2f2; padding: 20px; }
-        form, .box { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1); margin-bottom: 20px; }
-        label, select, input, button { font-size: 16px; margin-right: 10px; }
-        h1, h2 { color: #333; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 5px; }
-        .error { color: red; font-weight: bold; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            margin: 0;
+            padding: 40px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        form {
+            background: white;
+            padding: 30px;
+            max-width: 700px;
+            margin: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+        select, input[type="date"], button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background-color: #357ABD;
+        }
+        .box {
+            background: white;
+            padding: 25px;
+            max-width: 800px;
+            margin: 30px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 25px;
+        }
+        li {
+            padding: 8px 0;
+            line-height: 1.6;
+        }
+        .error {
+            color: #b30000;
+            background-color: #ffe6e6;
+            border-left: 6px solid #cc0000;
+            padding: 15px;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+        p {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
     </style>
 </head>
 <body>
-    <h1>Flight VPM Calculator</h1>
+    <h1>Flight Layover & VPM Calculator</h1>
     <form method="POST">
         <label>Choose a route:</label>
         <select name="route" required>
@@ -43,8 +110,10 @@ HTML = """
             <option value="SYD-BKK">Sydney (SYD) → Bangkok (BKK)</option>
             <option value="IST-YYZ">Istanbul (IST) → Toronto (YYZ)</option>
         </select>
+
         <label>Departure date:</label>
         <input type="date" name="date" required>
+
         <button type="submit">Submit</button>
     </form>
 
@@ -54,23 +123,23 @@ HTML = """
 
     {% if result %}
     <div class="box">
-        <h2>Top 5 Cheapest Routes (Only Economy class data):</h2>
+        <h2>Top 5 Cheapest Routes (Economy):</h2>
         <ul>
         {% for r in result['routes'] %}
-            <li>{{ r['route_str'] }} | ${{ r['price'] }} (Base: ${{ r['base'] }} + Taxes: ${{ r['taxes'] }}) | Stops: {{ r['stops'] }}</li>
+            <li><strong>{{ r['route_str'] }}</strong> — ${{ r['price'] }} (Base: ${{ r['base'] }} + Taxes: ${{ r['taxes'] }}) — Stops: {{ r['stops'] }}</li>
         {% endfor %}
         </ul>
 
         <h2>Optimal Route:</h2>
-        <p>{{ result['optimal']['route_str'] }} | ${{ result['optimal']['price'] }} | Stops: {{ result['optimal']['stops'] }}</p>
+        <p><strong>{{ result['optimal']['route_str'] }}</strong> — ${{ result['optimal']['price'] }} — Stops: {{ result['optimal']['stops'] }}</p>
 
         {% if result.get('vpm') %}
-            <h2>Value Per Mile (VPM)(Only Economy class data for Redemption rates and Miles required):</h2>
-            <p>${{ result['vpm']['value'] }}/mile | Airline: {{ result['vpm']['airline'] }} | Miles Required: {{ result['vpm']['miles'] }}</p>
+            <h2>Value Per Mile (VPM):</h2>
+            <p><strong>${{ result['vpm']['value'] }}/mile</strong> — Airline: {{ result['vpm']['airline'] }} — Miles Required: {{ result['vpm']['miles'] }}</p>
         {% elif result.get('fallback') %}
             <h2>Fallback Route:</h2>
-            <p>{{ result['fallback']['route']['route_str'] }} | ${{ result['fallback']['route']['price'] }}</p>
-            <p>VPM: ${{ result['fallback']['value'] }}/mile | {{ result['fallback']['airline'] }} | {{ result['fallback']['miles'] }} miles</p>
+            <p>{{ result['fallback']['route']['route_str'] }} — ${{ result['fallback']['route']['price'] }}</p>
+            <p>VPM: ${{ result['fallback']['value'] }}/mile — {{ result['fallback']['airline'] }} — {{ result['fallback']['miles'] }} miles</p>
         {% else %}
             <p>No redemption data found.</p>
         {% endif %}
