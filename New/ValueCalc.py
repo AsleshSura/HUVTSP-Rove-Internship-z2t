@@ -796,7 +796,6 @@ HYATT_HOTELS_INFO = {
             "Max Occupancy": 2,
             "Amenities": [
                 "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
-                # ... (17 total amenities)
             ]
         },
         "Core Amenities": [
@@ -811,7 +810,6 @@ HYATT_HOTELS_INFO = {
             "Max Occupancy": 2,
             "Amenities": [
                 "Coffee/tea maker", "Minibar", "Safety deposit box", "TV", "Telephone"
-                # ... (19 total amenities)
             ]
         },
         "1 King Bed (Breakfast Included)": {
