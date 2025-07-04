@@ -198,12 +198,110 @@ HOTELS_INFO = {
         }
     },
     "Hilton Worldwide": {
-      
+    "Hilton Hawaiian Village Waikiki Beach Resort (Honolulu, Hawaii, USA)": {
+        "Tapa Collection Resort View 1 King Bed": {
+            "Price": [537, 13300],
+            "Bonus Through Redemption": {
+                "Total": 0.13
+            }
+        },
+        "Resort View 2 Double Beds": {
+            "Price": [538, 7500],
+            "Bonus Through Redemption": {
+                "Total": 0.13
+            }
+        },
+        "Rainbow Kai Lagoon View 2q Hearing Acc": {
+            "Price": [734, 18700],
+            "Bonus Through Redemption": {
+                "Total": 0.15
+            }
+        },
+        "Core Amenities": ["Accessible entrances", "Accessible rooms", "Accessible dining", "Accessible pool", "Braille signage", "Service animals welcome"]
     },
-    "Hiltotn Worldwide": {},
-    "Hilrton Worldwide": {},
-    "Hilfton Worldwide": {},
-    "Hiltoyn Worldwide": {},
+
+    "New York Hilton Midtown (Manhattan, USA)": {
+        "1 King Mobility/hearing Accessible Ri-shower": {
+            "Price": [419, 8000],
+            "Bonus Through Redemption": {
+                "Total": 0.13
+            }
+        },
+        "2 Queen Beds Full View Floor-ceiling Window": {
+            "Price": [444, 17100],
+            "Bonus Through Redemption": {
+                "Total": 0.15
+            }
+        },
+        "2 Queen Beds Top Floor with City View": {
+            "Price": [474, 18300],
+            "Bonus Through Redemption": {
+                "Total": 0.18
+            }
+        },
+        "Core Amenities": ["Accessible entrances", "Accessible rooms", "Accessible fitness center", "Braille signage", "Assistive listening", "Service animals welcome"]
+    },
+
+    "Homewood Suites by Hilton Chicago Downtown South Loop": {
+        "1 King Mobilty/hearing Access Ri Shwr Studio Ns": {
+            "Price": [385, 7000],
+            "Bonus Through Redemption": {
+                "Total": 0.13
+            }
+        },
+        "1 King Hearing Accessible Corner Studio": {
+            "Price": [410, 18100],
+            "Bonus Through Redemption": {
+                "Total": 0.15
+            }
+        },
+        "1 King Bed Studio Corner Suite": {
+            "Price": [435, 19200],
+            "Bonus Through Redemption": {
+                "Total": 0.18
+            }
+        },
+        "Core Amenities": ["Accessible entrances", "Accessible rooms", "Accessible pool", "Braille signage", "Service animals welcome"]
+    },
+
+    "Conrad Maldives Rangali Island": {
+        "Beach Villa": {
+            "Price": [737, 14000],
+            "Bonus Through Redemption": {
+                "Total": 0.18
+            }
+        },
+        "Deluxe Water Villa with Pool": {
+            "Price": [1136, 28400],
+            "Bonus Through Redemption": {
+                "Total": 0.25
+            }
+        },
+        "3 Bedroom Beach Suite with Pool": {
+            "Price": [3245, 81200],
+            "Bonus Through Redemption": {
+                "Total": 0.35
+            }
+        },
+        "Core Amenities": ["Accessible fitness center", "Audible alarms", "Accessible bathrooms"]
+    },
+
+    "Hilton Aruba Caribbean Resort & Casino": {
+        "Project View Bonaire/curacao Tower 2 Doubles": {
+            "Price": [538, 10000],
+            "Bonus Through Redemption": {
+                "Total": 0.13
+            }
+        },
+        "Partial Ocean View Aruba Tower 2 Queen Beds": {
+            "Price": [634, 28500],
+            "Bonus Through Redemption": {
+                "Total": 0.15
+            }
+        },
+        "Core Amenities": ["Accessible entrances", "Accessible rooms", "Accessible pool", "Braille signage", "Service animals welcome"]
+    }
+}
 }
 
 RITZ_CARLTON_INFO = {
