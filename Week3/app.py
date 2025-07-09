@@ -135,12 +135,10 @@ HTML = """
 
         {% if result.get('vpm') %}
             <h2>Value Per Mile (VPM):</h2>
-            <p><strong>${{ result['vpm']['value'] }}/mile</strong> — Airline: {{ result['vpm']['airline'] }} — Miles Required: {{ result['vpm']['miles'] }}</p>
-        {% elif result.get('fallback') %}
+            <p><strong>{{ result['vpm']['value'] }}¢/mile</strong> — Airline: {{ result['vpm']['airline'] }} — Miles Required: {{ result['vpm']['miles'] }}</p>
             <h2>Fallback Route:</h2>
             <p>{{ result['fallback']['route']['route_str'] }} — ${{ result['fallback']['route']['price'] }}</p>
-            <p>VPM: ${{ result['fallback']['value'] }}/mile — {{ result['fallback']['airline'] }} — {{ result['fallback']['miles'] }} miles</p>
-        {% else %}
+            <p>VPM: {{ result['fallback']['value'] }}¢/mile — {{ result['fallback']['airline'] }} — {{ result['fallback']['miles'] }} miles</p>
             <p>No redemption data found.</p>
         {% endif %}
     </div>
@@ -190,7 +188,7 @@ def get_miles_required(origin, destination, airline):
     return None
 
 def calculate_vpm(price, taxes, miles):
-    return round((price - taxes) / miles, 4)
+    return round(100 * (price - taxes) / miles, 2)
 
 def find_optimal_route(routes):
     return sorted(routes, key=lambda r: (r["price"], r["stops"], r["duration"]))[0]
