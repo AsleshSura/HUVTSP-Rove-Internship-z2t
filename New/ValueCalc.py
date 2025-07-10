@@ -11,17 +11,6 @@ def value_per_mile(cash_value, miles, taxes_fees): #cash_value and miles are COS
 
 
  
-#dictionary format:
-  #KEY: Acc Hotels: Marriott International, Hilton Worldwide, InterContinental Hotels Group, Wyndham Hotels & Resorts  VALUE: another dictionary
-      #KEY2: The Diff Hotel Chains in Diff MAJOR Cities, of diff countries
-          #Key2: Diff suite names 
-              #KEY3: Price: Marriot Grand suite Paris price --> NUMBER (miles??)
-              #KEY4: Upgrades + Value: Free break fast n stuff (Strings with certain format so detectable)
-
-
-#Also maybe we can add more data and put it into a json file (idk how to import n do that stuff n if there are any extra cautions w dat sooo)
-
-#IMPORTANT: The "bonuses" are "extra" things that you would get if you pay with miles, and since you get more "features" we must factor this into the value per mile calculation
 
 #Price estimates in dollars
 #The room types are averages per suite type, so things like location in hotel or view are not seperately factored in, the room values are "averaged"
@@ -301,14 +290,11 @@ HOTELS_INFO = {
         },
         "Core Amenities": ["Accessible entrances", "Accessible rooms", "Accessible pool", "Braille signage", "Service animals welcome"]
     }
-}
-}
-
-RITZ_CARLTON_INFO = {
+},
+"Ritz Carlton": {
     "Dallas Irving Ritz Carlton": {
         "Deluxe Room, 1 King Bed, Balcony, Tower (Mobility Accessible, Roll-in Shower)": {
             "Price": [509.66, 35000],
-            "Redemption Value (¢/Mile)": 1.46,
             "Miles Earned": 5113,
             "Max Occupancy": 2,
             "Amenities": [
@@ -317,7 +303,6 @@ RITZ_CARLTON_INFO = {
         },
         "Villa, 1 King Bed, Patio, Poolside (View)": {
             "Price": [653.87, 49000],
-            "Redemption Value (¢/Mile)": 1.47,
             "Miles Earned": 7250,
             "Max Occupancy": 2,
             "Amenities": [
@@ -326,7 +311,6 @@ RITZ_CARLTON_INFO = {
         },
         "Executive Suite, 1 King Bed, Non Smoking, Golf View (Balcony)": {
             "Price": [692.39, 52000],
-            "Redemption Value (¢/Mile)": 1.47,
             "Miles Earned": 7678,
             "Max Occupancy": 2,
             "Amenities": [
@@ -340,7 +324,6 @@ RITZ_CARLTON_INFO = {
     "London Ritz Carlton": {
         "Executive Suite, 1 Bedroom": {
             "Price": [7261.87, 512000],
-            "Redemption Value (¢/Mile)": 1.42,
             "Miles Earned": 47530,
             "Max Occupancy": 2,
             "Amenities": [
@@ -349,7 +332,6 @@ RITZ_CARLTON_INFO = {
         },
         "Executive Suite, 1 Bedroom (Breakfast Included)": {
             "Price": [7391.55, 521000],
-            "Redemption Value (¢/Mile)": 1.42,
             "Miles Earned": 48378,
             "Max Occupancy": 2,
             "Amenities": [
@@ -363,7 +345,6 @@ RITZ_CARLTON_INFO = {
     "New York Ritz Carlton": {
         "Superior Room, 1 King Bed, Non Smoking": {
             "Price": [887.41, 60000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 8903,
             "Max Occupancy": 2,
             "Amenities": [
@@ -372,7 +353,6 @@ RITZ_CARLTON_INFO = {
         },
         "Room, 1 King Bed, Non Smoking, Park View": {
             "Price": [1109.29, 75000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 11129,
             "Max Occupancy": 2,
             "Amenities": [
@@ -381,7 +361,6 @@ RITZ_CARLTON_INFO = {
         },
         "Deluxe 1 King Bed, Interior View": {
             "Price": [1531.88, 103000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 15370,
             "Max Occupancy": 2,
             "Amenities": [
@@ -390,7 +369,6 @@ RITZ_CARLTON_INFO = {
         },
         "Avenue View, 1 King Bed, Mobility Accessible, Tub": {
             "Price": [1609.12, 108000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 16144,
             "Max Occupancy": 2,
             "Amenities": [
@@ -399,7 +377,6 @@ RITZ_CARLTON_INFO = {
         },
         "1 King Bed, Avenue View": {
             "Price": [1636.77, 110000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 16422,
             "Max Occupancy": 2,
             "Amenities": [
@@ -408,7 +385,6 @@ RITZ_CARLTON_INFO = {
         },
         "Deluxe 2 Double Beds, Interior View": {
             "Price": [1702.35, 114000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 17079,
             "Max Occupancy": 2,
             "Amenities": [
@@ -417,7 +393,6 @@ RITZ_CARLTON_INFO = {
         },
         "Grand Room, 1 King Bed, Non Smoking, Park View": {
             "Price": [1714.47, 115000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 17202,
             "Max Occupancy": 2,
             "Amenities": [
@@ -426,7 +401,6 @@ RITZ_CARLTON_INFO = {
         },
         "Suite, 1 Bedroom, Non Smoking, Park View": {
             "Price": [2785.80, 187000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 27950,
             "Max Occupancy": 2,
             "Amenities": [
@@ -435,7 +409,6 @@ RITZ_CARLTON_INFO = {
         },
         "Suite, Avenue View": {
             "Price": [2889.07, 194000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 28987,
             "Max Occupancy": 2,
             "Amenities": [
@@ -444,7 +417,6 @@ RITZ_CARLTON_INFO = {
         },
         "Grand Suite, 1 Bedroom, Non Smoking, Park View": {
             "Price": [3471.66, 233000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 34833,
             "Max Occupancy": 2,
             "Amenities": [
@@ -453,7 +425,6 @@ RITZ_CARLTON_INFO = {
         },
         "Premier Suite, 1 Bedroom, Non Smoking, Park View": {
             "Price": [4238.22, 284000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 42523,
             "Max Occupancy": 2,
             "Amenities": [
@@ -467,7 +438,6 @@ RITZ_CARLTON_INFO = {
     "Bali Ritz Carlton": {
         "Suite, 1 Bedroom, Non Smoking, Resort View (Balcony)": {
             "Price": [1868.86, 126000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 18750,
             "Max Occupancy": 2,
             "Amenities": [
@@ -476,7 +446,6 @@ RITZ_CARLTON_INFO = {
         },
         "Suite 1 Bedroom Non Smoking Resort View (Balcony) 1 King Bed": {
             "Price": [2006.80, 135000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 20135,
             "Max Occupancy": 2,
             "Amenities": [
@@ -485,7 +454,6 @@ RITZ_CARLTON_INFO = {
         },
         "Ubud Pool Villa 1 Bedroom Villa 1 King Ubud View Private Pool": {
             "Price": [2909.33, 195000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 29190,
             "Max Occupancy": 2,
             "Amenities": [
@@ -494,7 +462,6 @@ RITZ_CARLTON_INFO = {
         },
         "Riverfront Pool Villa 1 Bedroom Villa 1 King Ayung River view Private pool": {
             "Price": [3182.08, 213000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 31927,
             "Max Occupancy": 2,
             "Amenities": [
@@ -503,7 +470,6 @@ RITZ_CARLTON_INFO = {
         },
         "Reserve Pool Villa 2 Bedroom Villa Bedroom 1: 1 King Bedroom 2: 2 Queen Ayung River View": {
             "Price": [7273.33, 487000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 72976,
             "Max Occupancy": 2,
             "Amenities": [
@@ -517,7 +483,6 @@ RITZ_CARLTON_INFO = {
     "Maui Ritz-Carlton": {
         "Deluxe Room, 1 King Bed, Lanai, Resort View": {
             "Price": [734.83, 50000],
-            "Redemption Value (¢/Mile)": 1.47,
             "Miles Earned": 7372,
             "Max Occupancy": 2,
             "Amenities": [
@@ -526,7 +491,6 @@ RITZ_CARLTON_INFO = {
         },
         "1 Bedroom Suite, 1 King Bed and Sofa Bed, Garden View": {
             "Price": [1205.74, 81000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 12097,
             "Max Occupancy": 2,
             "Amenities": [
@@ -535,7 +499,6 @@ RITZ_CARLTON_INFO = {
         },
         "1 Bedroom Suite, 1 King Bed and Sofa Bed, Ocean View": {
             "Price": [1279.71, 86000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 12840,
             "Max Occupancy": 2,
             "Amenities": [
@@ -544,7 +507,6 @@ RITZ_CARLTON_INFO = {
         },
         "Suite, 2 Bedrooms, Non Smoking, Garden View": {
             "Price": [2195.10, 147000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 22024,
             "Max Occupancy": 2,
             "Amenities": [
@@ -555,13 +517,11 @@ RITZ_CARLTON_INFO = {
             "Shower", "Safety deposit box", "TV", "Telephone", "Air conditioning"
         ]
     }
-}
-
-HYATT_HOTELS_INFO = {
+},
+  "Hyatt Hotels" : {
     "Hyatt Regency Maui": {
         "Room, 1 King Bed with Sofa bed": {
             "Price": [830.31, 56000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 8330,
             "Max Occupancy": 2,
             "Amenities": [
@@ -570,7 +530,6 @@ HYATT_HOTELS_INFO = {
         },
         "Room, 1 King Bed with Sofa bed (Breakfast Included)": {
             "Price": [947.85, 64000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 9510,
             "Max Occupancy": 2,
             "Amenities": [
@@ -579,7 +538,6 @@ HYATT_HOTELS_INFO = {
         },
         "Room, 1 King Bed, Accessible (Shower)": {
             "Price": [830.31, 56000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 8330,
             "Max Occupancy": 2,
             "Amenities": [
@@ -588,7 +546,6 @@ HYATT_HOTELS_INFO = {
         },
         "Room, 1 King Bed, Accessible (Shower, Breakfast Included)": {
             "Price": [947.85, 64000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 9510,
             "Max Occupancy": 2,
             "Amenities": [
@@ -597,7 +554,6 @@ HYATT_HOTELS_INFO = {
         },
         "Room, 1 King Bed with Sofa bed, Partial Ocean View": {
             "Price": [866.47, 58000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 8693,
             "Max Occupancy": 2,
             "Amenities": [
@@ -606,7 +562,6 @@ HYATT_HOTELS_INFO = {
         },
         "Room, 1 King Bed with Sofa bed, Partial Ocean View (Breakfast Included)": {
             "Price": [984.36, 66000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 9876,
             "Max Occupancy": 2,
             "Amenities": [
@@ -615,7 +570,6 @@ HYATT_HOTELS_INFO = {
         },
         "Room, 1 King Bed with Sofa bed, Ocean View": {
             "Price": [878.52, 59000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 8813,
             "Max Occupancy": 2,
             "Amenities": [
@@ -624,7 +578,6 @@ HYATT_HOTELS_INFO = {
         },
         "Room, 1 King Bed with Sofa bed, Ocean View (Breakfast Included)": {
             "Price": [996.55, 67000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 9999,
             "Max Occupancy": 2,
             "Amenities": [
@@ -633,7 +586,6 @@ HYATT_HOTELS_INFO = {
         },
         "1 King Bed, Mountain View": {
             "Price": [795.63, 64000],
-            "Redemption Value (¢/Mile)": 1.47,
             "Miles Earned": 9468,
             "Max Occupancy": 2,
             "Amenities": [
@@ -642,7 +594,6 @@ HYATT_HOTELS_INFO = {
         },
         "1 King Bed, Mountain View (Breakfast Included)": {
             "Price": [898.08, 72000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 10686,
             "Max Occupancy": 2,
             "Amenities": [
@@ -651,7 +602,6 @@ HYATT_HOTELS_INFO = {
         },
         "ROOM, QUEEN/QUEEN, MOUNTAIN VIEW": {
             "Price": [947.48, 64000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 9506,
             "Max Occupancy": 2,
             "Amenities": [
@@ -660,7 +610,6 @@ HYATT_HOTELS_INFO = {
         },
         "ROOM, QUEEN/QUEEN, OCEAN VIEW": {
             "Price": [987.00, 67000],
-            "Redemption Value (¢/Mile)": 1.47,
             "Miles Earned": 9903,
             "Max Occupancy": 2,
             "Amenities": [
@@ -669,7 +618,6 @@ HYATT_HOTELS_INFO = {
         },
         "ROOM, QUEEN/QUEEN, PARTIAL OCEAN VIEW": {
             "Price": [991.02, 67000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 9943,
             "Max Occupancy": 2,
             "Amenities": [
@@ -678,7 +626,6 @@ HYATT_HOTELS_INFO = {
         },
         "Room, 1 King Bed with Sofa bed, Ocean View, Corner": {
             "Price": [1008.70, 68000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 10120,
             "Max Occupancy": 2,
             "Amenities": [
@@ -687,7 +634,6 @@ HYATT_HOTELS_INFO = {
         },
         "Room, 1 King Bed with Sofa bed, Ocean View, Corner (Breakfast Included)": {
             "Price": [1118.20, 75000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 11219,
             "Max Occupancy": 2,
             "Amenities": [
@@ -696,7 +642,6 @@ HYATT_HOTELS_INFO = {
         },
         "1 King Bed, Ocean front": {
             "Price": [863.93, 69000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 10280,
             "Max Occupancy": 2,
             "Amenities": [
@@ -705,7 +650,6 @@ HYATT_HOTELS_INFO = {
         },
         "1 King Bed, Ocean front (Breakfast Included)": {
             "Price": [966.35, 77000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 11498,
             "Max Occupancy": 2,
             "Amenities": [
@@ -714,7 +658,6 @@ HYATT_HOTELS_INFO = {
         },
         "Club Room, 1 King Bed with Sofa bed, Partial Ocean View (Club Access)": {
             "Price": [1144.99, 77000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 11488,
             "Max Occupancy": 2,
             "Amenities": [
@@ -723,7 +666,6 @@ HYATT_HOTELS_INFO = {
         },
         "Club Room, 1 King Bed with Sofa bed, Partial Ocean View (Club Access, Breakfast Included)": {
             "Price": [1254.50, 84000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 12588,
             "Max Occupancy": 2,
             "Amenities": [
@@ -732,7 +674,6 @@ HYATT_HOTELS_INFO = {
         },
         "Club Room, 1 King Bed with Sofa bed, Oceanfront (Club Access)": {
             "Price": [1193.67, 80000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 11976,
             "Max Occupancy": 2,
             "Amenities": [
@@ -741,7 +682,6 @@ HYATT_HOTELS_INFO = {
         },
         "Club Room, 1 King Bed with Sofa bed, Oceanfront (Club Access, Breakfast Included)": {
             "Price": [1303.18, 88000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 13075,
             "Max Occupancy": 2,
             "Amenities": [
@@ -750,7 +690,6 @@ HYATT_HOTELS_INFO = {
         },
         "Suite, Oceanfront": {
             "Price": [2804.68, 188000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 28140,
             "Max Occupancy": 2,
             "Amenities": [
@@ -759,7 +698,6 @@ HYATT_HOTELS_INFO = {
         },
         "Suite, Oceanfront (Breakfast Included)": {
             "Price": [2914.18, 195000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 29239,
             "Max Occupancy": 2,
             "Amenities": [
@@ -768,7 +706,6 @@ HYATT_HOTELS_INFO = {
         },
         "Deluxe Ocean Suite": {
             "Price": [2726.09, 217000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 32440,
             "Max Occupancy": 2,
             "Amenities": [
@@ -777,7 +714,6 @@ HYATT_HOTELS_INFO = {
         },
         "Deluxe Ocean Suite (Breakfast Included)": {
             "Price": [2828.53, 225000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 33659,
             "Max Occupancy": 2,
             "Amenities": [
@@ -791,7 +727,6 @@ HYATT_HOTELS_INFO = {
     "Hyatt Regency Bali": {
         "1 King Bed Premium": {
             "Price": [356.32, 24000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 3576,
             "Max Occupancy": 2,
             "Amenities": [
@@ -805,7 +740,6 @@ HYATT_HOTELS_INFO = {
     "Park Hyatt New York": {
         "1 King Bed": {
             "Price": [1108.14, 75000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 11118,
             "Max Occupancy": 2,
             "Amenities": [
@@ -814,7 +748,6 @@ HYATT_HOTELS_INFO = {
         },
         "1 King Bed (Breakfast Included)": {
             "Price": [1246.03, 84000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 12501,
             "Max Occupancy": 2,
             "Amenities": [
@@ -823,7 +756,6 @@ HYATT_HOTELS_INFO = {
         },
         "1 King Bed With Ada Shower": {
             "Price": [1108.14, 75000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 11118,
             "Max Occupancy": 2,
             "Amenities": [
@@ -832,7 +764,6 @@ HYATT_HOTELS_INFO = {
         },
         "1 King Bed With Ada Shower (Breakfast Included)": {
             "Price": [1246.03, 84000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 12501,
             "Max Occupancy": 2,
             "Amenities": [
@@ -841,7 +772,6 @@ HYATT_HOTELS_INFO = {
         },
         "2 Double Beds With City View": {
             "Price": [1438.01, 97000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 14428,
             "Max Occupancy": 2,
             "Amenities": [
@@ -850,7 +780,6 @@ HYATT_HOTELS_INFO = {
         },
         "2 Double Beds With City View (Breakfast Included)": {
             "Price": [1575.90, 106000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 15811,
             "Max Occupancy": 2,
             "Amenities": [
@@ -859,7 +788,6 @@ HYATT_HOTELS_INFO = {
         },
         "1 King Bed With City View": {
             "Price": [1438.01, 97000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 14428,
             "Max Occupancy": 2,
             "Amenities": [
@@ -868,7 +796,6 @@ HYATT_HOTELS_INFO = {
         },
         "1 King Bed With City View (Breakfast Included)": {
             "Price": [1575.90, 106000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 15811,
             "Max Occupancy": 2,
             "Amenities": [
@@ -877,7 +804,6 @@ HYATT_HOTELS_INFO = {
         },
         "2 Double Beds Studio Suite": {
             "Price": [1491.05, 100000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 14960,
             "Max Occupancy": 2,
             "Amenities": [
@@ -886,7 +812,6 @@ HYATT_HOTELS_INFO = {
         },
         "2 Double Beds Studio Suite (Breakfast Included)": {
             "Price": [1628.94, 109000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 16343,
             "Max Occupancy": 2,
             "Amenities": [
@@ -895,7 +820,6 @@ HYATT_HOTELS_INFO = {
         },
         "1 Bedroom City View Suite": {
             "Price": [1654.40, 111000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 16599,
             "Max Occupancy": 2,
             "Amenities": [
@@ -904,7 +828,6 @@ HYATT_HOTELS_INFO = {
         },
         "1 Bedroom City View Suite (Breakfast Included)": {
             "Price": [1792.29, 120000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 17983,
             "Max Occupancy": 2,
             "Amenities": [
@@ -913,7 +836,6 @@ HYATT_HOTELS_INFO = {
         },
         "1 Bedroom Sleep Suite By Bryte": {
             "Price": [1737.14, 117000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 17430,
             "Max Occupancy": 2,
             "Amenities": [
@@ -922,7 +844,6 @@ HYATT_HOTELS_INFO = {
         },
         "1 Bedroom Sleep Suite By Bryte (Breakfast Included)": {
             "Price": [1875.03, 126000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 18813,
             "Max Occupancy": 2,
             "Amenities": [
@@ -931,7 +852,6 @@ HYATT_HOTELS_INFO = {
         },
         "Suite 1 Bedroom City View 1 King Bed": {
             "Price": [1938.97, 130000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 19454,
             "Max Occupancy": 2,
             "Amenities": [
@@ -940,7 +860,6 @@ HYATT_HOTELS_INFO = {
         },
         "1 Bedroom Terrace Suite": {
             "Price": [2609.04, 175000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 26177,
             "Max Occupancy": 2,
             "Amenities": [
@@ -949,7 +868,6 @@ HYATT_HOTELS_INFO = {
         },
         "1 Bedroom Terrace Suite (Breakfast Included)": {
             "Price": [2746.92, 184000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 27560,
             "Max Occupancy": 2,
             "Amenities": [
@@ -958,7 +876,6 @@ HYATT_HOTELS_INFO = {
         },
         "Suite 1 Bedroom Terrace 1 King Bed": {
             "Price": [3059.20, 205000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 30694,
             "Max Occupancy": 2,
             "Amenities": [
@@ -972,7 +889,6 @@ HYATT_HOTELS_INFO = {
     "Park Hyatt Milano": {
         "Deluxe Room (Park)": {
             "Price": [1537.47, 111000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 16514,
             "Max Occupancy": 2,
             "Amenities": [
@@ -981,7 +897,6 @@ HYATT_HOTELS_INFO = {
         },
         "Park Junior Suite": {
             "Price": [2408.23, 162000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 24163,
             "Max Occupancy": 2,
             "Amenities": [
@@ -990,7 +905,6 @@ HYATT_HOTELS_INFO = {
         },
         "Park Junior Suite (Breakfast Included)": {
             "Price": [2527.63, 170000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 25360,
             "Max Occupancy": 2,
             "Amenities": [
@@ -999,7 +913,6 @@ HYATT_HOTELS_INFO = {
         },
         "Prestige Suite": {
             "Price": [3607.00, 242000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 36190,
             "Max Occupancy": 2,
             "Amenities": [
@@ -1008,7 +921,6 @@ HYATT_HOTELS_INFO = {
         },
         "Prestige Suite (Breakfast Included)": {
             "Price": [3726.40, 250000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 37388,
             "Max Occupancy": 2,
             "Amenities": [
@@ -1017,7 +929,6 @@ HYATT_HOTELS_INFO = {
         },
         "Terrace Suite": {
             "Price": [3845.80, 258000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 38586,
             "Max Occupancy": 2,
             "Amenities": [
@@ -1026,7 +937,6 @@ HYATT_HOTELS_INFO = {
         },
         "Terrace Suite (Breakfast Included)": {
             "Price": [3965.20, 266000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 39784,
             "Max Occupancy": 2,
             "Amenities": [
@@ -1040,7 +950,6 @@ HYATT_HOTELS_INFO = {
     "Hyatt Regency London Blackfriars": {
         "Regency Suite High Street View": {
             "Price": [1189.82, 80000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 11940,
             "Max Occupancy": 2,
             "Amenities": [
@@ -1049,7 +958,6 @@ HYATT_HOTELS_INFO = {
         },
         "Executive Suite": {
             "Price": [1293.26, 87000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 12976,
             "Max Occupancy": 2,
             "Amenities": [
@@ -1058,7 +966,6 @@ HYATT_HOTELS_INFO = {
         },
         "Executive Suite (Room Only, Higher Rate)": {
             "Price": [1432.73, 96000],
-            "Redemption Value (¢/Mile)": 1.49,
             "Miles Earned": 14376,
             "Max Occupancy": 2,
             "Amenities": [
@@ -1067,7 +974,6 @@ HYATT_HOTELS_INFO = {
         },
         "SUITE EXECUTIVE CITY VIEW": {
             "Price": [1392.25, 94000],
-            "Redemption Value (¢/Mile)": 1.48,
             "Miles Earned": 13969,
             "Max Occupancy": 2,
             "Amenities": [
@@ -1078,20 +984,35 @@ HYATT_HOTELS_INFO = {
             "Coffee/tea maker", "Minibar", "Safety deposit box", "Telephone", "Air conditioning"
         ]
     }
+  }
 }
+
+
 
 #Keys and Value categories
 #Bonuses: Possible Upgrade = 0.05   Late Checkout = 0.015   Balcony = 0.05    View = 0.1    Breakfast = 0.03    Nonstrict Time =  0.03 (Early check in / Late Checkout)   Lounge Access: 0.08  
 #Hotel Wide Amenities: Gym    Housekeeping   Business Center   Evening Turndown Service     Sundry/Convenience Store    Dog Friendly w/ Fee
 
 #CALCULATOR
-#Calculate value per mile for the hotel specifically\y
+#Calculate value per mile for the hotel specifically
 def hotel_vpm_calc(taxes_fees, chain, hotel_name, room_name):
-  bonus_value = HOTELS_INFO[chain][hotel_name][room_name]["Bonus Through Redemption"]["Total"]
+  try:
+    bonus_value = HOTELS_INFO[chain][hotel_name][room_name]["Bonus Through Redemption"]["Total"]
+    if bonus_value is None:
+        bonus_value = 0
+  except (KeyError, TypeError):
+    bonus_value = 0
+
   cash_value = HOTELS_INFO[chain][hotel_name][room_name]["Price"][0]
   miles = HOTELS_INFO[chain][hotel_name][room_name]["Price"][1]
 
-#fees and taxes???  
+  try:
+    miles_earned = HOTELS_INFO[chain][hotel_name][room_name]["Miles Earned"]
+    if miles_earned is None:
+        miles_earned = 0
+  except (KeyError, TypeError):
+    miles_earned = 0
+
   cash_value = cash_value*(1+bonus_value)
-  return value_per_mile(cash_value, miles, taxes_fees)
+  return 100*value_per_mile(cash_value, miles, taxes_fees) #in cents
 
