@@ -1014,5 +1014,7 @@ def hotel_vpm_calc(taxes_fees, chain, hotel_name, room_name):
     miles_earned = 0
 
   cash_value = cash_value*(1+bonus_value)
+
+  print(f"Even when booking through cash you earn {cash_value}!")
   return 100*value_per_mile(cash_value, miles, taxes_fees) #in cents
 
