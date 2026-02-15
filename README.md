@@ -1,8 +1,8 @@
-# HUVTSP Rove Internship - Team z2t
+# Rove User Airline Miles Optimization Backend
 Group Members: [Hardik Aslesh Sura](https://github.com/AsleshSura/), Devisree Putta, Adrian Ciubotaru, Angelina Stewart, Jayden Nguyen, Bret Chen, Sabrina Cui
 
 ## Project Overview
-This repository contains Python scripts and web applications developed during the HUVTSP Rove Internship. The project is a comprehensive travel optimization tool designed to help users find artificial layovers to make travel experiences cheaper and maximize the value of their airline miles. The main focus is on flight data retrieval, parsing, and visualization using the Amadeus API, combined with static hotel data to improve the overall user experience.
+This repository contains Python scripts and web applications developed during the Rove Internship. The project is a comprehensive travel optimization tool designed to help users find artificial layovers to make travel experiences cheaper and maximize the value of their airline miles. The main focus is on flight data retrieval, parsing, and visualization using the Amadeus API, combined with static hotel data to improve the overall user experience.
 
 ### Key Features
 - **Artificial Layover Detection**: Identifies strategic layovers that can significantly reduce travel costs
